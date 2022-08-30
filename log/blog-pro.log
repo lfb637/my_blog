@@ -1,0 +1,8 @@
+2022-08-18 08:43:50.730  INFO 39720 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 39720 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-18 08:43:50.731  INFO 39720 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "pro"
+2022-08-18 08:43:52.270  WARN 39720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-18 08:43:52.522  INFO 39720 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 2.122 seconds (JVM running for 2.942)
+2022-08-18 08:44:28.665  INFO 39844 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 39844 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-18 08:44:28.665  INFO 39844 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "pro"
+2022-08-18 08:44:30.239  WARN 39844 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-18 08:44:30.501  INFO 39844 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 2.137 seconds (JVM running for 3.056)

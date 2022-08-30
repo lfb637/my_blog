@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端适配-->
+    <meta name="viewport" conetnt="width=device-width,initial-scale=1.0">
+    <title>500内部错误。。。。。。</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/my.css">
+    <link rel="stylesheet" href="../../static/lib/editor/css/editormd.min.css">
+</head>
+<body>
+<!-- 导航-->
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item m-padded-tb-mini">随手记 </h2>
+            <a href="#" class="m-show item m-mobile-hide"><i class="small home icon"></i>首页</a>
+            <a href="#" class="m-show item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+            <a href="#" class="m-show item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+            <a href="#" class="m-show item m-mobile-hide"><i class="small folder icon"></i>归档</a>
+            <a href="#" class="m-show item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+            <div class="m-show right item m-mobile-hide">
+                <div class="ui icon inverted transparent input ">
+                    <input type="text" placeholder="搜索......">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--中间-->
+<div class="m-container-small m-padded-tb-massive">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="ui center aligned error message m-padded-tb-huge" >
+        <div class="ui center aligned container">
+            <h2>500</h2>
+            <p>内部资源访问错误，请稍后重试。。。。</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<!--底部-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid"> <!--16占格-->
+            <div class="four wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" alt="" style="width: 120px">
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-padded-tb-mini m-text-spaced">推荐文章</h4>
+                <div class="ui inverted link list ">
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">今天是星期三</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">明天是星期四</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">后天是星期五</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">大后天是星期六</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-padded-tb-mini m-text-spaced">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">qq：15546412121</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">微信：156466461161</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">邮箱：ssdfsasd@qq.com</a>
+                    <a href="#" class="item m-padded-tb-mini m-text-spaced m-opacity-mini">电话：156466461161</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-padded-tb-mini m-text-spaced">李先生</h4>
+                <p class="m-padded-tb-mini m-text-spaced m-opacity-mini">一个热爱编程的码农，喜欢创造、喜欢独立思考、是一个有趣的人。。。。</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider">
+            <p class="m-padded-tb-large m-text-spaced m-opacity-tiny"> ©京公网安备11010802022728号  京ICP证 160587号  ©京ICP备16007318号</p>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

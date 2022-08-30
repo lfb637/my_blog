@@ -1,0 +1,723 @@
+2022-08-22 03:32:41.806  INFO 63500 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 63500 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 03:32:41.809 DEBUG 63500 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 03:32:41.809  INFO 63500 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 03:32:41.840  INFO 63500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 03:32:41.841  INFO 63500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 03:32:42.296  INFO 63500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 03:32:42.349  INFO 63500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2022-08-22 03:32:42.857  INFO 63500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 03:32:42.858  INFO 63500 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 03:32:42.859  INFO 63500 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 03:32:42.859  INFO 63500 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 03:32:42.869  INFO 63500 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 03:32:42.876  INFO 63500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 03:32:42.876  INFO 63500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 03:32:42.977  INFO 63500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 03:32:42.977  INFO 63500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1136 ms
+2022-08-22 03:32:43.149  INFO 63500 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 03:32:43.191  INFO 63500 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 03:32:43.309  INFO 63500 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 03:32:43.383  INFO 63500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 03:32:43.918  INFO 63500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 03:32:43.931  INFO 63500 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 03:32:44.458  INFO 63500 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 03:32:44.465  INFO 63500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 03:32:45.320  WARN 63500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 03:32:45.496  INFO 63500 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 03:32:45.782  INFO 63500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 03:32:45.808  INFO 63500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 03:32:45.816  INFO 63500 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 4.379 seconds (JVM running for 5.188)
+2022-08-22 03:32:54.596  INFO 63500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 03:32:54.596  INFO 63500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 03:32:54.598  INFO 63500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-22 03:32:54.624  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:32:54.624  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:32:54.722  WARN 63500 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:32:54.732  WARN 63500 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:32:54.743  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:32:54.743  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:32:55.322  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:32:55.322  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:32:55.336  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:32:55.336  INFO 63500 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:32:57.681  INFO 63500 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:32:57.681  INFO 63500 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 03:32:57.693  INFO 63500 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:types
+2022-08-22 03:32:57.693  INFO 63500 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:32:57.914  INFO 63500 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:32:57.914  INFO 63500 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:32:57.921  INFO 63500 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:32:57.921  INFO 63500 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:33:00.448  INFO 63500 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:33:00.448  INFO 63500 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[44, {}]}***************
+2022-08-22 03:33:00.515  INFO 63500 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 03:33:00.515  INFO 63500 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:33:00.826  INFO 63500 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:33:00.826  INFO 63500 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:33:00.835  INFO 63500 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:33:00.835  INFO 63500 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:41:30.346  INFO 63500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 03:41:30.349  INFO 63500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 03:41:30.353  INFO 63500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 03:41:32.857  INFO 20640 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 20640 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 03:41:32.858 DEBUG 20640 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 03:41:32.858  INFO 20640 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 03:41:32.885  INFO 20640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 03:41:32.886  INFO 20640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 03:41:33.286  INFO 20640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 03:41:33.330  INFO 20640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2022-08-22 03:41:33.819  INFO 20640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 03:41:33.819  INFO 20640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 03:41:33.820  INFO 20640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 03:41:33.820  INFO 20640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 03:41:33.822  INFO 20640 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 03:41:33.828  INFO 20640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 03:41:33.828  INFO 20640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 03:41:33.900  INFO 20640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 03:41:33.900  INFO 20640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1014 ms
+2022-08-22 03:41:34.063  INFO 20640 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 03:41:34.090  INFO 20640 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 03:41:34.173  INFO 20640 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 03:41:34.231  INFO 20640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 03:41:34.715  INFO 20640 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 03:41:34.728  INFO 20640 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 03:41:35.210  INFO 20640 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 03:41:35.217  INFO 20640 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 03:41:35.885  WARN 20640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 03:41:36.043  INFO 20640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 03:41:36.278  INFO 20640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 03:41:36.303  INFO 20640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 03:41:36.310  INFO 20640 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 3.807 seconds (JVM running for 5.124)
+2022-08-22 03:41:56.162  INFO 20640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 03:41:56.162  INFO 20640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 03:41:56.163  INFO 20640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-22 03:41:56.184  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:41:56.184  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:41:56.262  WARN 20640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:41:56.283  WARN 20640 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:41:56.292  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:41:56.293  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:41:56.815  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:41:56.816  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:41:56.825  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:41:56.826  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:08.973  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:08.974  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 03:42:08.986  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:types
+2022-08-22 03:42:08.986  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:09.213  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:09.213  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:42:09.220  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:42:09.220  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:09.895  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:09.895  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 03:42:09.917  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:tags
+2022-08-22 03:42:09.917  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:09.966 ERROR 20640 --- [http-nio-8080-exec-2] c.l.handler.ControllerExceptionHandler   : Request URL:http://localhost:8080/tags/www.bytedance.com，Exception:Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"
+2022-08-22 03:42:09.967  WARN 20640 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"]
+2022-08-22 03:42:10.143  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:10.143  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:42:10.148  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:42:10.148  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:16.590  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:16.590  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[44, {}]}***************
+2022-08-22 03:42:16.650  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 03:42:16.651  INFO 20640 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:42:16.962  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:42:16.962  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:42:16.967  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:42:16.968  INFO 20640 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:45:08.824  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:45:08.825  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:45:08.838  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:45:08.838  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:45:09.089  INFO 20640 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:45:09.089  INFO 20640 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:45:09.096  INFO 20640 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:45:09.096  INFO 20640 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:50:01.862  INFO 20640 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:50:01.863  INFO 20640 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:50:01.875  INFO 20640 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:50:01.875  INFO 20640 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:50:02.137  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:50:02.137  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:50:02.141  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:50:02.141  INFO 20640 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:50:04.632  INFO 20640 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:50:04.632  INFO 20640 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 03:50:04.647  INFO 20640 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 03:50:04.647  INFO 20640 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:50:04.916  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:50:04.916  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:50:04.920  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:50:04.920  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:54:17.257  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:54:17.257  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:54:17.275  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:54:17.275  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:54:17.608  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:54:17.608  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:54:17.613  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:54:17.614  INFO 20640 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:54:52.095  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:54:52.095  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 03:54:52.105  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 03:54:52.106  INFO 20640 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:54:52.366  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:54:52.366  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:54:52.372  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:54:52.372  INFO 20640 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:55:54.961  INFO 20640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 03:55:54.964  INFO 20640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 03:55:54.971  INFO 20640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 03:55:57.335  INFO 50340 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 50340 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 03:55:57.336 DEBUG 50340 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 03:55:57.336  INFO 50340 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 03:55:57.368  INFO 50340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 03:55:57.368  INFO 50340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 03:55:57.888  INFO 50340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 03:55:57.981  INFO 50340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2022-08-22 03:55:58.495  INFO 50340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 03:55:58.496  INFO 50340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 03:55:58.496  INFO 50340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 03:55:58.496  INFO 50340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 03:55:58.499  INFO 50340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 03:55:58.504  INFO 50340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 03:55:58.504  INFO 50340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 03:55:58.567  INFO 50340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 03:55:58.567  INFO 50340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2022-08-22 03:55:58.708  INFO 50340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 03:55:58.733  INFO 50340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 03:55:58.816  INFO 50340 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 03:55:58.869  INFO 50340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 03:55:59.351  INFO 50340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 03:55:59.362  INFO 50340 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 03:55:59.802  INFO 50340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 03:55:59.808  INFO 50340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 03:56:00.481  WARN 50340 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 03:56:00.614  INFO 50340 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 03:56:00.854  INFO 50340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 03:56:00.882  INFO 50340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 03:56:00.893  INFO 50340 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 3.857 seconds (JVM running for 5.026)
+2022-08-22 03:56:10.948  INFO 50340 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 03:56:10.948  INFO 50340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 03:56:10.950  INFO 50340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-22 03:56:10.979  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:56:10.979  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 03:56:11.054  WARN 50340 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:56:11.062  WARN 50340 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 03:56:11.070  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 03:56:11.070  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 03:56:11.597  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 03:56:11.597  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 03:56:11.607  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 03:56:11.607  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:02:26.689  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:02:26.689  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:02:26.732  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:02:26.732  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:02:26.997  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:02:26.997  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:02:27.004  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:02:27.004  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:03:46.083  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:03:46.083  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:03:46.093  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:03:46.093  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:03:46.378  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:03:46.379  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:03:46.387  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:03:46.387  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:05:13.802  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:05:13.802  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:05:13.821  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:05:13.821  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:05:14.102  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:05:14.102  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:05:14.108  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:05:14.108  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:10:20.481  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:10:20.481  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:10:20.501  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:10:20.501  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:10:20.783  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:10:20.783  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:10:20.788  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:10:20.789  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:11:18.572  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:11:18.572  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:11:18.585  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:11:18.585  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:11:18.860  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:11:18.860  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:11:18.867  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:11:18.867  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:05.863  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:05.863  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:05.877  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:types
+2022-08-22 04:14:05.877  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:06.126  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:06.126  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:06.131  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:06.131  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:06.448  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:06.448  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:06.466  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:tags
+2022-08-22 04:14:06.466  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:06.519 ERROR 50340 --- [http-nio-8080-exec-1] c.l.handler.ControllerExceptionHandler   : Request URL:http://localhost:8080/tags/www.bytedance.com，Exception:Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"
+2022-08-22 04:14:06.519  WARN 50340 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"]
+2022-08-22 04:14:06.693  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:06.694  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:06.699  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:06.700  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:07.127  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:07.127  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.ArchiveShowController.archives', args=[{}]}***************
+2022-08-22 04:14:07.143  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:archives
+2022-08-22 04:14:07.144  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:07.364  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:07.364  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:07.372  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:07.372  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:07.492  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:07.492  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.AboutShowController.about', args=[]}***************
+2022-08-22 04:14:07.494  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:about
+2022-08-22 04:14:07.494  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:16.541  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:16.541  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 04:14:16.552  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 04:14:16.552  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:16.813  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:16.813  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:16.819  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:16.820  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:17.036  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:17.037  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:17.043  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:types
+2022-08-22 04:14:17.043  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:17.263  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:17.263  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:17.269  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:17.269  INFO 50340 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:17.628  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:17.628  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:17.635  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:tags
+2022-08-22 04:14:17.635  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:17.668 ERROR 50340 --- [http-nio-8080-exec-10] c.l.handler.ControllerExceptionHandler   : Request URL:http://localhost:8080/tags/www.bytedance.com，Exception:Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"
+2022-08-22 04:14:17.669  WARN 50340 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"]
+2022-08-22 04:14:17.859  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:17.859  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:17.865  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:17.866  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:18.344  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:18.344  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.ArchiveShowController.archives', args=[{}]}***************
+2022-08-22 04:14:18.354  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:archives
+2022-08-22 04:14:18.354  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:18.561  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:18.561  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:18.568  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:18.568  INFO 50340 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:22.810  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:22.810  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:22.816  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:types
+2022-08-22 04:14:22.816  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:23.031  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:23.031  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:23.038  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:23.038  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:25.397  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:25.397  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 04:14:25.409  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 04:14:25.410  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:25.623  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:25.623  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:25.627  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:25.627  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:28.984  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:28.984  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}***************
+2022-08-22 04:14:28.994  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:tags
+2022-08-22 04:14:28.994  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:29.026 ERROR 50340 --- [http-nio-8080-exec-3] c.l.handler.ControllerExceptionHandler   : Request URL:http://localhost:8080/tags/www.bytedance.com，Exception:Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"
+2022-08-22 04:14:29.027  WARN 50340 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "www.bytedance.com"]
+2022-08-22 04:14:29.256  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:29.256  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:29.260  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:29.260  INFO 50340 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:37.519  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:37.519  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:14:37.533  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:14:37.533  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:14:37.807  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:14:37.807  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:14:37.812  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:14:37.812  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:20:28.327  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:20:28.327  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:20:28.339  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:20:28.339  INFO 50340 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:20:28.564  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:20:28.564  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:20:28.569  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:20:28.569  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:20:32.703  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:20:32.703  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.AboutShowController.about', args=[]}***************
+2022-08-22 04:20:32.704  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:about
+2022-08-22 04:20:32.704  INFO 50340 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:21:26.352  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:21:26.352  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:21:26.361  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:21:26.361  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:21:26.574  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:21:26.574  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:21:26.578  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:21:26.578  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:24:52.950  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:24:52.951  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:24:52.962  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:24:52.962  INFO 50340 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:24:53.280  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:24:53.280  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:24:53.284  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:24:53.284  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:25:14.261  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:25:14.261  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:25:14.273  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:25:14.273  INFO 50340 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:25:14.517  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:25:14.517  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:25:14.521  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:25:14.521  INFO 50340 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:26:42.704  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:26:42.704  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:26:42.714  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:26:42.715  INFO 50340 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:26:42.961  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:26:42.961  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:26:42.965  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:26:42.966  INFO 50340 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:33:16.550  INFO 50340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 04:33:16.552  INFO 50340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 04:33:16.557  INFO 50340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 04:33:19.578  INFO 48384 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 48384 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 04:33:19.579 DEBUG 48384 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 04:33:19.580  INFO 48384 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 04:33:19.610  INFO 48384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 04:33:19.610  INFO 48384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 04:33:20.021  INFO 48384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 04:33:20.064  INFO 48384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2022-08-22 04:33:20.554  INFO 48384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 04:33:20.554  INFO 48384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 04:33:20.555  INFO 48384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 04:33:20.555  INFO 48384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 04:33:20.557  INFO 48384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 04:33:20.561  INFO 48384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 04:33:20.561  INFO 48384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 04:33:20.626  INFO 48384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 04:33:20.626  INFO 48384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2022-08-22 04:33:20.771  INFO 48384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 04:33:20.793  INFO 48384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 04:33:20.866  INFO 48384 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 04:33:20.913  INFO 48384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 04:33:21.343  INFO 48384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 04:33:21.354  INFO 48384 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 04:33:21.796  INFO 48384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 04:33:21.803  INFO 48384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 04:33:22.488  WARN 48384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 04:33:22.640  INFO 48384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 04:33:22.906  INFO 48384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 04:33:22.931  INFO 48384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 04:33:22.938  INFO 48384 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 3.656 seconds (JVM running for 4.572)
+2022-08-22 04:33:35.139  INFO 48384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 04:33:35.139  INFO 48384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 04:33:35.140  INFO 48384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-22 04:33:35.161  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:33:35.161  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 04:33:35.231  WARN 48384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 04:33:35.239  WARN 48384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 04:33:35.247  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 04:33:35.247  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:33:35.760  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:33:35.760  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:33:35.769  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:33:35.769  INFO 48384 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:33:38.598  INFO 48384 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:33:38.599  INFO 48384 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:33:38.648  INFO 48384 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:33:38.648  INFO 48384 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:33:38.919  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:33:38.920  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:33:38.925  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:33:38.925  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:31.986  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:31.986  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:38:32.005  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:38:32.006  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:32.264  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:32.264  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:38:32.270  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:38:32.270  INFO 48384 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:52.688  INFO 48384 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:52.688  INFO 48384 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 04:38:52.699  INFO 48384 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:38:52.699  INFO 48384 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:52.963  INFO 48384 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:52.963  INFO 48384 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:38:52.969  INFO 48384 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:38:52.969  INFO 48384 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:55.311  INFO 48384 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:55.311  INFO 48384 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[44, {}]}***************
+2022-08-22 04:38:55.326  INFO 48384 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 04:38:55.326  INFO 48384 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:38:55.601  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 04:38:55.601  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 04:38:55.606  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 04:38:55.606  INFO 48384 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 04:40:29.441  INFO 48384 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 04:40:29.443  INFO 48384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 04:40:29.446  INFO 48384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 05:03:10.757  INFO 65648 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 65648 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 05:03:10.757 DEBUG 65648 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 05:03:10.758  INFO 65648 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 05:03:10.784  INFO 65648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 05:03:10.784  INFO 65648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 05:03:11.166  INFO 65648 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 05:03:11.206  INFO 65648 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2022-08-22 05:03:11.664  INFO 65648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 05:03:11.665  INFO 65648 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 05:03:11.665  INFO 65648 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 05:03:11.665  INFO 65648 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 05:03:11.668  INFO 65648 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 05:03:11.673  INFO 65648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 05:03:11.673  INFO 65648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 05:03:11.743  INFO 65648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 05:03:11.743  INFO 65648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 959 ms
+2022-08-22 05:03:11.881  INFO 65648 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 05:03:11.911  INFO 65648 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 05:03:12.008  INFO 65648 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 05:03:12.076  INFO 65648 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 05:03:12.568  INFO 65648 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 05:03:12.580  INFO 65648 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 05:03:13.059  INFO 65648 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 05:03:13.066  INFO 65648 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 05:03:13.841  WARN 65648 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 05:03:13.980  INFO 65648 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 05:03:14.256  INFO 65648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 05:03:14.284  INFO 65648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 05:03:14.292  INFO 65648 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 3.809 seconds (JVM running for 4.735)
+2022-08-22 05:03:18.989  INFO 65648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 05:03:18.989  INFO 65648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 05:03:18.990  INFO 65648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-22 05:03:19.017  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:03:19.018  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 05:03:19.104  WARN 65648 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 05:03:19.113  WARN 65648 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 05:03:19.121  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 05:03:19.121  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:03:19.705  INFO 65648 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:03:19.706  INFO 65648 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:03:19.715  INFO 65648 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:03:19.715  INFO 65648 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:03:20.876  INFO 65648 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:03:20.876  INFO 65648 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 05:03:20.919  INFO 65648 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 05:03:20.919  INFO 65648 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:03:21.192  INFO 65648 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:03:21.193  INFO 65648 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:03:21.201  INFO 65648 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:03:21.201  INFO 65648 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:03:21.247  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:03:21.247  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 05:03:21.264  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 05:03:21.265  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:11.432  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:11.433  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 05:04:11.447  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 05:04:11.447  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:11.712  INFO 65648 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:11.712  INFO 65648 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:04:11.717  INFO 65648 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:04:11.717  INFO 65648 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:13.625  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:13.625  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 05:04:13.645  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 05:04:13.645  INFO 65648 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:13.915  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:13.915  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:04:13.920  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:04:13.921  INFO 65648 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:13.968  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:13.968  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 05:04:13.970  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 05:04:13.970  INFO 65648 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:20.195  INFO 65648 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 05:04:20.197  INFO 65648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 05:04:20.203  INFO 65648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 05:04:22.594  INFO 61484 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 61484 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 05:04:22.595 DEBUG 61484 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 05:04:22.595  INFO 61484 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 05:04:22.626  INFO 61484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 05:04:22.626  INFO 61484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 05:04:23.018  INFO 61484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 05:04:23.065  INFO 61484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2022-08-22 05:04:23.523  INFO 61484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 05:04:23.524  INFO 61484 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 05:04:23.524  INFO 61484 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 05:04:23.524  INFO 61484 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 05:04:23.526  INFO 61484 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 05:04:23.531  INFO 61484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 05:04:23.532  INFO 61484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 05:04:23.594  INFO 61484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 05:04:23.594  INFO 61484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 968 ms
+2022-08-22 05:04:23.748  INFO 61484 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 05:04:23.774  INFO 61484 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 05:04:23.848  INFO 61484 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 05:04:23.902  INFO 61484 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 05:04:24.409  INFO 61484 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 05:04:24.422  INFO 61484 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 05:04:24.915  INFO 61484 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 05:04:24.920  INFO 61484 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 05:04:25.573  WARN 61484 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 05:04:25.703  INFO 61484 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 05:04:25.932  INFO 61484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 05:04:25.958  INFO 61484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 05:04:25.966  INFO 61484 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 3.741 seconds (JVM running for 4.927)
+2022-08-22 05:04:30.541  INFO 61484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 05:04:30.541  INFO 61484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 05:04:30.542  INFO 61484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-22 05:04:30.563  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:30.563  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 05:04:30.648  WARN 61484 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 05:04:30.657  WARN 61484 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 05:04:30.665  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 05:04:30.666  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:31.148  INFO 61484 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:31.148  INFO 61484 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:04:31.154  INFO 61484 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:04:31.154  INFO 61484 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:32.934  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:32.935  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 05:04:32.980  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 05:04:32.980  INFO 61484 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:33.250  INFO 61484 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:33.251  INFO 61484 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 05:04:33.257  INFO 61484 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 05:04:33.257  INFO 61484 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:04:33.302  INFO 61484 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 05:04:33.303  INFO 61484 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 05:04:33.317  INFO 61484 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 05:04:33.317  INFO 61484 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 05:05:03.464  INFO 61484 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 05:05:03.467  INFO 61484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 05:05:03.530  INFO 61484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 08:14:24.384  INFO 29356 --- [restartedMain] com.lfb.BlogApplication                  : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-ULG2J1R0 with PID 29356 (D:\Workspace\blog\target\classes started by lfb in D:\Workspace\blog)
+2022-08-22 08:14:24.385 DEBUG 29356 --- [restartedMain] com.lfb.BlogApplication                  : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-22 08:14:24.385  INFO 29356 --- [restartedMain] com.lfb.BlogApplication                  : The following 1 profile is active: "dev"
+2022-08-22 08:14:24.420  INFO 29356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 08:14:24.421  INFO 29356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 08:14:24.844  INFO 29356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 08:14:24.892  INFO 29356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2022-08-22 08:14:25.394  INFO 29356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 08:14:25.395  INFO 29356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-08-22 08:14:25.395  INFO 29356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-22 08:14:25.395  INFO 29356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-22 08:14:25.406  INFO 29356 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-08-22 08:14:25.413  INFO 29356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 08:14:25.413  INFO 29356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 08:14:25.489  INFO 29356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 08:14:25.490  INFO 29356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1069 ms
+2022-08-22 08:14:25.663  INFO 29356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 08:14:25.697  INFO 29356 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 08:14:25.798  INFO 29356 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 08:14:25.857  INFO 29356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 08:14:26.338  INFO 29356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 08:14:26.351  INFO 29356 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-22 08:14:26.869  INFO 29356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 08:14:26.874  INFO 29356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 08:14:27.584  WARN 29356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 08:14:27.733  INFO 29356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-22 08:14:28.043  INFO 29356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 08:14:28.072  INFO 29356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 08:14:28.080  INFO 29356 --- [restartedMain] com.lfb.BlogApplication                  : Started BlogApplication in 4.043 seconds (JVM running for 4.928)
+2022-08-22 08:14:33.133  INFO 29356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 08:14:33.134  INFO 29356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 08:14:33.135  INFO 29356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-22 08:14:33.162  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:14:33.162  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 08:14:33.246  WARN 29356 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 08:14:33.254  WARN 29356 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-22 08:14:33.263  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 08:14:33.263  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:14:33.851  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:14:33.852  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 08:14:33.859  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 08:14:33.859  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:14:37.538  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:14:37.538  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 08:14:37.581  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 08:14:37.582  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:14:37.849  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:14:37.850  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 08:14:37.856  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 08:14:37.857  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:14:37.926  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:14:37.926  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:14:37.941  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:14:37.941  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:30.022  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:30.022  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}***************
+2022-08-22 08:15:30.034  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:index
+2022-08-22 08:15:30.034  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:30.276  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:30.276  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 08:15:30.281  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 08:15:30.281  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:31.865  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:31.865  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/blog/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.blog', args=[45, {}]}***************
+2022-08-22 08:15:31.876  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:blog
+2022-08-22 08:15:31.876  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:32.131  INFO 29356 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:32.131  INFO 29356 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.newblogs', args=[{}]}***************
+2022-08-22 08:15:32.136  INFO 29356 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : return:_fragments :: newblogList
+2022-08-22 08:15:32.137  INFO 29356 --- [http-nio-8080-exec-5] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:32.182  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:32.182  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:15:32.184  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:15:32.184  INFO 29356 --- [http-nio-8080-exec-1] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:47.566  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:47.566  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.post', args=[Comment{id=null, nickname='李先生', email='lfb637@qq.com', content='测试评论', avatar='null', createTime=null, blog=Blog{id=45, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, recommend=false, published=false, tagIds='null', description='null', createTime=null, updateTime=null, user=null, type=null, comments=null, tags=[]}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@1ae93407]}***************
+2022-08-22 08:15:47.610  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : return:redirect:/comments/45
+2022-08-22 08:15:47.611  INFO 29356 --- [http-nio-8080-exec-7] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:47.621  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:47.621  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:15:47.626  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:15:47.626  INFO 29356 --- [http-nio-8080-exec-6] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:55.306  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:55.306  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.post', args=[Comment{id=null, nickname='李先生', email='lfb637@qq.com', content='回复评论', avatar='null', createTime=null, blog=Blog{id=45, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, recommend=false, published=false, tagIds='null', description='null', createTime=null, updateTime=null, user=null, type=null, comments=null, tags=[]}, replyComments=[], parentComment=Comment{id=46, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@1ae93407]}***************
+2022-08-22 08:15:55.330  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : return:redirect:/comments/45
+2022-08-22 08:15:55.330  INFO 29356 --- [http-nio-8080-exec-4] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:15:55.333  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:15:55.333  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:15:55.338  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:15:55.338  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:06.286  INFO 29356 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:16:06.286  INFO 29356 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.post', args=[Comment{id=null, nickname='李先生', email='lfb637@qq.com', content='再回复', avatar='null', createTime=null, blog=Blog{id=45, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, recommend=false, published=false, tagIds='null', description='null', createTime=null, updateTime=null, user=null, type=null, comments=null, tags=[]}, replyComments=[], parentComment=Comment{id=47, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@1ae93407]}***************
+2022-08-22 08:16:06.306  INFO 29356 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : return:redirect:/comments/45
+2022-08-22 08:16:06.307  INFO 29356 --- [http-nio-8080-exec-3] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:06.309  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:16:06.309  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:16:06.315  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:16:06.315  INFO 29356 --- [http-nio-8080-exec-2] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:17.724  INFO 29356 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:16:17.724  INFO 29356 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.post', args=[Comment{id=null, nickname='李先生', email='lfb637@qq.com', content='我也回复', avatar='null', createTime=null, blog=Blog{id=45, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, recommend=false, published=false, tagIds='null', description='null', createTime=null, updateTime=null, user=null, type=null, comments=null, tags=[]}, replyComments=[], parentComment=Comment{id=46, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@1ae93407]}***************
+2022-08-22 08:16:17.743  INFO 29356 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : return:redirect:/comments/45
+2022-08-22 08:16:17.743  INFO 29356 --- [http-nio-8080-exec-10] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:17.746  INFO 29356 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:16:17.746  INFO 29356 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/comments/45', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.CommentController.comments', args=[45, {}]}***************
+2022-08-22 08:16:17.754  INFO 29356 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : return:blog :: commentList
+2022-08-22 08:16:17.754  INFO 29356 --- [http-nio-8080-exec-8] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:36.872  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************在执前***************
+2022-08-22 08:16:36.872  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************Request{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.lfb.controller.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 测试, {}]}***************
+2022-08-22 08:16:36.881  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : return:search
+2022-08-22 08:16:36.881  INFO 29356 --- [http-nio-8080-exec-9] com.lfb.aspect.LogAspect                 : *************执行后***************
+2022-08-22 08:16:43.620  INFO 29356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 08:16:43.623  INFO 29356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 08:16:43.635  INFO 29356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
