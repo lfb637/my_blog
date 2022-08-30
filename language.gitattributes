@@ -1,3 +1,7 @@
 *.js linguist-language=java
 *.css linguist-language=java
+<<<<<<< HEAD
 *.html linguist-language=java
+=======
+*.html linguist-language=java
+>>>>>>> ded5d4d3909161867eef1c3292350492372b73f1
